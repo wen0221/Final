@@ -19,9 +19,12 @@ namespace Final.Objects
         public string Education { get; set; }
         public string SocialStanding { get; set; }
 
+       
+
         enum ability
         {
             Strength=1, Dexterity=2, Endurance=3, Intellect=4, Education=5, SocialStanding=6
         }
+       
     }
 }

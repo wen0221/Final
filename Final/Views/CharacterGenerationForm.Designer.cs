@@ -49,7 +49,7 @@
             this.IntellectDataLabel = new System.Windows.Forms.Label();
             this.EducationDataLabel = new System.Windows.Forms.Label();
             this.SocialStandingDataLabel = new System.Windows.Forms.Label();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabControl = new System.Windows.Forms.TabControl();
             this.IdentityPage = new System.Windows.Forms.TabPage();
             this.IdentityTableLayoutPanel = new System.Windows.Forms.TableLayoutPanel();
             this.FirstNameLabel = new System.Windows.Forms.Label();
@@ -80,7 +80,7 @@
             this.Exitbutton = new System.Windows.Forms.Button();
             this.MaintabControl.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tabControl.SuspendLayout();
             this.IdentityPage.SuspendLayout();
             this.IdentityTableLayoutPanel.SuspendLayout();
             this.AbilityPage.SuspendLayout();
@@ -376,20 +376,20 @@
             this.SocialStandingDataLabel.TabIndex = 12;
             this.SocialStandingDataLabel.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
-            // tabControl1
+            // tabControl
             // 
-            this.tabControl1.Controls.Add(this.IdentityPage);
-            this.tabControl1.Controls.Add(this.AbilityPage);
-            this.tabControl1.Controls.Add(this.SkillsPage);
-            this.tabControl1.Controls.Add(this.CharacterSheetPage);
-            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.tabControl1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tabControl1.Location = new System.Drawing.Point(0, 0);
-            this.tabControl1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(800, 335);
-            this.tabControl1.TabIndex = 2;
+            this.tabControl.Controls.Add(this.IdentityPage);
+            this.tabControl.Controls.Add(this.AbilityPage);
+            this.tabControl.Controls.Add(this.SkillsPage);
+            this.tabControl.Controls.Add(this.CharacterSheetPage);
+            this.tabControl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.tabControl.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tabControl.Location = new System.Drawing.Point(0, 0);
+            this.tabControl.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tabControl.Name = "tabControl";
+            this.tabControl.SelectedIndex = 0;
+            this.tabControl.Size = new System.Drawing.Size(800, 335);
+            this.tabControl.TabIndex = 2;
             // 
             // IdentityPage
             // 
@@ -784,6 +784,7 @@
             this.Exitbutton.TabIndex = 11;
             this.Exitbutton.Text = "EXIT";
             this.Exitbutton.UseVisualStyleBackColor = true;
+            this.Exitbutton.Click += new System.EventHandler(this.Exitbutton_Click);
             // 
             // CharacterGenerationForm
             // 
@@ -792,13 +793,13 @@
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.BackButton);
             this.Controls.Add(this.NextButton);
-            this.Controls.Add(this.tabControl1);
+            this.Controls.Add(this.tabControl);
             this.Controls.Add(this.MaintabControl);
             this.Name = "CharacterGenerationForm";
             this.Text = "CharacterGenerationForm";
             this.MaintabControl.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.tabControl.ResumeLayout(false);
             this.IdentityPage.ResumeLayout(false);
             this.IdentityTableLayoutPanel.ResumeLayout(false);
             this.AbilityPage.ResumeLayout(false);
@@ -833,7 +834,7 @@
         private System.Windows.Forms.Label IntellectDataLabel;
         private System.Windows.Forms.Label EducationDataLabel;
         private System.Windows.Forms.Label SocialStandingDataLabel;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tabControl;
         private System.Windows.Forms.TabPage IdentityPage;
         private System.Windows.Forms.TableLayoutPanel IdentityTableLayoutPanel;
         private System.Windows.Forms.Label FirstNameLabel;

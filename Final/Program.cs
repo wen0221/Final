@@ -17,12 +17,15 @@ namespace Final
         [STAThread]
         static void Main()
         {
-            
 
 
+          
 
-        Application.EnableVisualStyles();
+
+            Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+
+            characterForm = new CharacterGenerationForm();
             Application.Run(characterForm);
         }
         
