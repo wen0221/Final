@@ -797,6 +797,7 @@
             this.Controls.Add(this.MaintabControl);
             this.Name = "CharacterGenerationForm";
             this.Text = "CharacterGenerationForm";
+            this.Load += new System.EventHandler(this.CharacterGenerationForm_Load);
             this.MaintabControl.ResumeLayout(false);
             this.tableLayoutPanel1.ResumeLayout(false);
             this.tabControl.ResumeLayout(false);

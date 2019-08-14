@@ -42,7 +42,9 @@ namespace Final.Views
         }
         public void GenerateNames()
         {
+            LoadNames();
             Random name = new Random();
+
             
         }
 
@@ -94,6 +96,12 @@ namespace Final.Views
         private void Exitbutton_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void CharacterGenerationForm_Load(object sender, EventArgs e)
+        {
+            LoadNames();
+            GenerateNames();
         }
     }
 }
